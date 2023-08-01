@@ -1,4 +1,4 @@
-const nameIcons=(icon:string)=> {
+const nameIcons = (icon: string) => {
     if (icon === 'Task') {
         icon = 'task';
     } else if (icon === 'Idea') {

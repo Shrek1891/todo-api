@@ -51,7 +51,7 @@ export function updateNote(defaultNote: NoteDto, id: string): Note {
         note.category = defaultNote.category;
         note.content = defaultNote.content;
         note.Dates = note.Dates
-            && note.Dates !== defaultNote.Dates ?
+        && note.Dates !== defaultNote.Dates ?
             `${note.Dates} , ${defaultNote.Dates}`
             : note.Dates;
     } else throw new Error('Note with this id was not found');

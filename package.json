@@ -1,7 +1,7 @@
 {
-  "name": "js_task_3",
+  "name": "task3",
   "version": "1.0.0",
-  "description": "Hometask 3 _ NodeJS _ React + Node.js Internship",
+  "description": "Node.js",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
