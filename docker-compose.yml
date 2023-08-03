@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  localhost:
+    build: .
+    container_name: todos
+    restart: always
+    expose:
+      - 5001
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/usr/src/app
+    command: "npm run dev"
+    env_file:
+      - .env
+  db:
+    build: .
+    image: postgres:15.3
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: todos
+      POSTGRES_USER: azhurba0810
+      POSTGRES_PASSWORD: qwerty54321
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    expose:
+      - 5432
+    ports:
+      - "5432:5432"
+    volumes:
+      - ../2. Init Database:/docker-entrypoint-initdb.d
+      - habrdb-data:/var/lib/postgresql/data
+
+
+volumes:
+  habrdb-data:
