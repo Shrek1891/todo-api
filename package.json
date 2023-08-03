@@ -1,7 +1,7 @@
 {
-  "name": "task3",
+  "name": "js_task_3",
   "version": "1.0.0",
-  "description": "Node.js",
+  "description": "Hometask 3 _ NodeJS _ React + Node.js Internship",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
@@ -13,7 +13,7 @@
     "TypeScript",
     "Yup"
   ],
-  "author": "TheDimas",
+  "author": "Zhurba",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.12",
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "uuid": "^9.0.0",
     "yup": "^1.2.0"
