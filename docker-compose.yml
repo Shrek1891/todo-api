@@ -11,8 +11,7 @@ services:
     volumes:
       - .:/usr/src/app
     command: "npm run dev"
-    env_file:
-      - .env
+
   db:
     build: .
     image: postgres:15.3
