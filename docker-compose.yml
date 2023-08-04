@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  main:
+    container_name: main
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "5001:5001"
+    restart: always
+    command: "npm run start:dev"
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:15.3
+    container_name: postgres
+    restart: always
+    environment:
+      - PGDATA=/var/lib/postgresql/data
+
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+
+
+volumes:
+  pg-data:
