@@ -8,7 +8,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:5001/api/notes",
+			"name": "http://localhost:5001/notes",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -62,7 +62,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\r\n        \r\n      \r\n        \"name\": \"Shopping List\",\r\n        \"category\": \"Task\",\r\n        \"content\": \"Groceries\",\r\n        \"Dates\": \" \",\r\n        \"archived\": false\r\n\r\n\r\n\r\n}",
+					"raw": "{\r\n    \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -70,14 +70,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5001/api/notes",
+					"raw": "http://localhost:5001/notes",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"api",
 						"notes"
 					]
 				}
@@ -85,7 +84,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5001/api/notes/1",
+			"name": "http://localhost:5001/notes/1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -139,7 +138,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\r\n  \"name\":\"Zhurba\",\r\n  \"password\":\"12345\",\r\n  \"email\":\"test123@test.ua\"\r\n\r\n\r\n\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -147,16 +146,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5001/api/notes/1",
+					"raw": "http://localhost:5001/notes/2393",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"api",
 						"notes",
-						"1"
+						"2393"
 					]
 				},
 				"description": "Get note by id"
@@ -164,7 +162,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5001/api/notes/stats",
+			"name": "http://localhost:5001/notes/stats",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -218,7 +216,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\r\n  \"name\":\"Zhurba\",\r\n  \"password\":\"12345\",\r\n  \"email\":\"test123@test.ua\"\r\n\r\n\r\n\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -226,14 +224,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5001/api/notes/stats",
+					"raw": "http://localhost:5001/notes/stats",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"api",
 						"notes",
 						"stats"
 					]
@@ -243,7 +240,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5001/api/notes",
+			"name": "http://localhost:5001/notes",
 			"request": {
 				"auth": {
 					"type": "jwt",
@@ -294,7 +291,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"name\": \"Shopping List\",\r\n        \"category\": \"Task\",\r\n        \"content\": \"Groceries\",\r\n        \"Dates\": \" \",\r\n        \"archived\": false\r\n\r\n\r\n}",
+					"raw": "{\r\n    \"name\": \"Shopping List 78\",\r\n    \"category\": \"Idea\",\r\n    \"content\": \"OOO\",\r\n    \"Dates\": \"2023-08-27 \",\r\n    \"archived\":false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -302,14 +299,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5001/api/notes",
+					"raw": "http://localhost:5001/notes",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"api",
 						"notes"
 					]
 				},
@@ -318,7 +314,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5001/api/notes/1",
+			"name": "http://localhost:5001/notes/1",
 			"request": {
 				"auth": {
 					"type": "jwt",
@@ -368,16 +364,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5001/api/notes/1",
+					"raw": "http://localhost:5001/notes/2393",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"api",
 						"notes",
-						"1"
+						"2393"
 					]
 				},
 				"description": "delete note by id"
@@ -436,7 +431,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Shopping List 2\",\r\n    \"category\": \"Task\",\r\n    \"content\": \"Apples\",\r\n    \"Dates\": \"2023-08-27 \"\r\n}",
+					"raw": "{\r\n    \"name\": \"Shopping List 3\",\r\n    \"category\": \"Task\",\r\n    \"content\": \"Apples\",\r\n    \"Dates\": \"2023-08-27 \"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -444,16 +439,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5001/api/notes/3",
+					"raw": "http://localhost:5001/6653",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"api",
-						"notes",
-						"3"
+						"6653"
 					]
 				},
 				"description": "update note by id"
